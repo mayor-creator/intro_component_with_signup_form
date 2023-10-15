@@ -1,21 +1,79 @@
 @use "./variables" as v;
 
 body {
-    background-color: v.$red;
-    background-image: url("./../../images/bg-intro-mobile.png");
-    font-family: v.$font-family;
-    font-size: v.$font-size;
+	background-color: v.$red;
+	background-image: url("./../../images/bg-intro-mobile.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: v.$font-family;
+	font-size: v.$font-size;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 80px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 h1 {
-    font-weight: v.$font_weight-seven;
-    color: white;
+	color: whitesmoke;
+	font-size: 1.5rem;
+}
+
+.left_container {
+	margin-bottom: 48px;
+}
+
+.heading {
+	//height: 4.25rem;
+	margin-top: 100px;
+	padding: 0rem 70px 0rem 70px;
+}
+
+.message {
+	color: whitesmoke;
+	padding: 1.125rem 0.625rem 0.625rem;
+	text-align: center;
+}
+
+.free_days_trail_container {
+	width: 19.5rem;
+	background-color: v.$blue;
+	border-radius: 0.625rem;
+	margin: auto;
+	margin-bottom: 28px;
+	box-shadow: 0 5px 2px -2px #777777;
+}
+
+.free_trail {
+	text-align: center;
+	padding: 1.25rem 3.125rem;
+	color: whitesmoke;
+}
+
+span {
+	color: white;
+	font-weight: v.$font_weight-seven;
+}
+
+.form_container {
+	width: 19.5rem;
+	border-radius: 0.625rem;
+	background-color: whitesmoke;
+}
+
+.contact_info {
+	padding: 30px 0px 0px 0px;
+}
+
+input {
+	border: 0;
+	border-radius: 5px;
+	display: block;
+	font-size: v.$font-size;
+	height: 54px;
+	width: 270px;
+	padding: 10px;
+	margin: auto;
 }
