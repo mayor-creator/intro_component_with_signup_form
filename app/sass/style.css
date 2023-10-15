@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 main {
@@ -20,28 +20,28 @@ main {
 
 h1 {
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 27px;
 }
 
 .left_container {
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .heading {
-  margin-top: 100px;
-  padding: 0rem 70px 0rem 70px;
+  text-align: center;
+  padding: 90px 70px 20px 70px;
 }
 
 .message {
   color: whitesmoke;
-  padding: 1.125rem 0.625rem 0.625rem;
+  padding: 20px 30px;
   text-align: center;
 }
 
 .free_days_trail_container {
-  width: 19.5rem;
+  width: 312px;
   background-color: hsl(248, 32%, 49%);
-  border-radius: 0.625rem;
+  border-radius: 10px;
   margin: auto;
   margin-bottom: 28px;
   box-shadow: 0 5px 2px -2px #777777;
@@ -59,8 +59,8 @@ span {
 }
 
 .form_container {
-  width: 19.5rem;
-  border-radius: 0.625rem;
+  width: 312px;
+  border-radius: 10px;
   background-color: whitesmoke;
 }
 
@@ -72,7 +72,7 @@ input {
   border: 0;
   border-radius: 5px;
   display: block;
-  font-size: 1rem;
+  font-size: 16px;
   height: 54px;
   width: 270px;
   padding: 10px;
