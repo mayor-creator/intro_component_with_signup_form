@@ -2,6 +2,7 @@
 /*primary colors */
 /*accent color */
 /*netural color */
+/* media queries for laptop and desktop*/
 body {
   background-color: hsl(0, 100%, 74%);
   background-image: url("./../../images/bg-intro-mobile.png");
@@ -38,13 +39,18 @@ h1 {
   text-align: center;
 }
 
+.right_container {
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
 .free_days_trail_container {
-  width: 312px;
   background-color: hsl(248, 32%, 49%);
   border-radius: 10px;
+  box-shadow: 0 5px 2px -2px #777777;
   margin: auto;
   margin-bottom: 28px;
-  box-shadow: 0 5px 2px -2px #777777;
+  width: 312px;
 }
 
 .free_trail {
@@ -59,9 +65,10 @@ span {
 }
 
 .form_container {
-  width: 312px;
   border-radius: 10px;
   background-color: whitesmoke;
+  box-shadow: 0 5px 2px -2px #777777;
+  width: 312px;
 }
 
 .contact_info {
@@ -73,8 +80,24 @@ input {
   border-radius: 5px;
   display: block;
   font-size: 16px;
-  height: 54px;
   width: 270px;
   padding: 10px;
   margin: auto;
+}
+
+input[type=button] {
+  background-color: hsl(154, 59%, 51%);
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.terms_of_services {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.terms {
+  color: hsl(0, 100%, 74%);
 }/*# sourceMappingURL=style.css.map */

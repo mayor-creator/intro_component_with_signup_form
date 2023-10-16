@@ -13,4 +13,11 @@ $green: hsl(154, 59%, 51%);
 $blue: hsl(248, 32%, 49%);
 /*netural color */
 $dark_blue: hsl(249, 10%, 26%);
-$grayish_blue: hsl(246, 25%, 77%)
+$grayish_blue: hsl(246, 25%, 77%);
+
+/* media queries for laptop and desktop*/
+@mixin desktop {
+    @media (min-width: 64.0625em) and (max-width: 80em) {
+        @content;
+    }
+}

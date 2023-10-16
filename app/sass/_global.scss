@@ -36,13 +36,18 @@ h1 {
 	text-align: center;
 }
 
+.right_container {
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
 .free_days_trail_container {
-	width: 312px;
 	background-color: v.$blue;
 	border-radius: 10px;
+	box-shadow: 0 5px 2px -2px #777777;
 	margin: auto;
 	margin-bottom: 28px;
-	box-shadow: 0 5px 2px -2px #777777;
+	width: 312px;
 }
 
 .free_trail {
@@ -56,10 +61,12 @@ span {
 	font-weight: v.$font_weight-seven;
 }
 
+
 .form_container {
-	width: 312px;
 	border-radius: 10px;
 	background-color: whitesmoke;
+	box-shadow: 0 5px 2px -2px #777777;
+	width: 312px;
 }
 
 .contact_info {
@@ -71,8 +78,24 @@ input {
 	border-radius: 5px;
 	display: block;
 	font-size: v.$font-size;
-	height: 54px;
 	width: 270px;
 	padding: 10px;
 	margin: auto;
+}
+
+input[type="button"] {
+	background-color: v.$green;
+	color: whitesmoke;
+	font-weight: v.$font_weight-six;
+}
+
+.terms_of_services {
+	color: v.$grayish_blue;
+	font-size: 12px;
+	padding: 20px;
+	text-align: center;
+}
+
+.terms {
+	color: v.$red;
 }
