@@ -5,8 +5,15 @@ body {
 	background-image: url("./../../images/bg-intro-mobile.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: v.$font-family;
 	font-size: v.$font-size;
+
+	@include v.desktop {
+		background-image: url("./../../images/bg-intro-desktop.png");
+	}
 }
 
 main {
@@ -14,6 +21,11 @@ main {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
+	@include v.desktop {
+		flex-direction: row;
+		gap: 20px;
+	}
 }
 
 h1 {
@@ -23,6 +35,11 @@ h1 {
 
 .left_container {
 	padding-bottom: 48px;
+
+	@include v.desktop {
+		max-width: 568px;
+		height: 598px;
+	}
 }
 
 .heading {
@@ -48,6 +65,10 @@ h1 {
 	margin: auto;
 	margin-bottom: 28px;
 	width: 312px;
+
+	@include v.desktop {
+		width: 544px;
+	}
 }
 
 .free_trail {
@@ -67,6 +88,10 @@ span {
 	background-color: whitesmoke;
 	box-shadow: 0 5px 2px -2px #777777;
 	width: 312px;
+
+	@include v.desktop {
+		width: 544px;
+	}
 }
 
 .contact_info {
@@ -81,6 +106,10 @@ input {
 	width: 270px;
 	padding: 10px;
 	margin: auto;
+
+	@include v.desktop {
+		width: 460px;
+	}
 }
 
 input[type="button"] {
