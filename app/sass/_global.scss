@@ -24,13 +24,17 @@ main {
 
 	@include v.desktop {
 		flex-direction: row;
-		gap: 20px;
 	}
 }
 
 h1 {
 	color: whitesmoke;
 	font-size: 27px;
+
+	@include v.desktop {
+		font-size: 36px;
+		font-weight: v.$font_weight-seven;
+	}
 }
 
 .left_container {
@@ -38,24 +42,38 @@ h1 {
 
 	@include v.desktop {
 		max-width: 568px;
-		height: 598px;
+		padding: 0px;
 	}
 }
 
 .heading {
 	text-align: center;
 	padding: 90px 70px 20px 70px;
+
+	@include v.desktop {
+		padding: 0px 120px 50px 0px;
+		text-align: left;
+	}
 }
 
 .message {
 	color: whitesmoke;
 	padding: 20px 30px;
 	text-align: center;
+
+	@include v.desktop {
+		padding: 0px;
+		text-align: left;
+	}
 }
 
 .right_container {
 	padding-bottom: 50px;
 	overflow: hidden;
+
+	@include v.desktop {
+		padding: 0px;
+	}
 }
 
 .free_days_trail_container {
@@ -106,16 +124,43 @@ input {
 	width: 270px;
 	padding: 10px;
 	margin: auto;
+	outline: none;
 
 	@include v.desktop {
 		width: 460px;
 	}
 }
 
+/*  input focus section */
+input[type=text] {
+	border: 1px solid #ccc;
+}
+
+input[type=email] {
+	border: 1px solid #ccc;
+}
+
+input[type=password] {
+	border: 1px solid #ccc;
+}
+
+input[type=text]:focus {
+	border: 1px solid v.$dark_blue;
+}
+
+input[type=email]:focus {
+	border: 1px solid v.$dark_blue;
+}
+
+input[type=password]:focus {
+	border: 1px solid v.$dark_blue;
+}
+
 input[type="button"] {
 	background-color: v.$green;
 	color: whitesmoke;
 	font-weight: v.$font_weight-six;
+
 }
 
 .terms_of_services {

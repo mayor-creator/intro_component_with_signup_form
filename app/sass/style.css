@@ -29,13 +29,18 @@ main {
 @media (min-width: 64.0625em) and (max-width: 80em) {
   main {
     flex-direction: row;
-    gap: 20px;
   }
 }
 
 h1 {
   color: whitesmoke;
   font-size: 27px;
+}
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
 }
 
 .left_container {
@@ -44,7 +49,7 @@ h1 {
 @media (min-width: 64.0625em) and (max-width: 80em) {
   .left_container {
     max-width: 568px;
-    height: 598px;
+    padding: 0px;
   }
 }
 
@@ -52,16 +57,33 @@ h1 {
   text-align: center;
   padding: 90px 70px 20px 70px;
 }
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  .heading {
+    padding: 0px 120px 50px 0px;
+    text-align: left;
+  }
+}
 
 .message {
   color: whitesmoke;
   padding: 20px 30px;
   text-align: center;
 }
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  .message {
+    padding: 0px;
+    text-align: left;
+  }
+}
 
 .right_container {
   padding-bottom: 50px;
   overflow: hidden;
+}
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  .right_container {
+    padding: 0px;
+  }
 }
 
 .free_days_trail_container {
@@ -113,11 +135,37 @@ input {
   width: 270px;
   padding: 10px;
   margin: auto;
+  outline: none;
 }
 @media (min-width: 64.0625em) and (max-width: 80em) {
   input {
     width: 460px;
   }
+}
+
+/*  input focus section */
+input[type=text] {
+  border: 1px solid #ccc;
+}
+
+input[type=email] {
+  border: 1px solid #ccc;
+}
+
+input[type=password] {
+  border: 1px solid #ccc;
+}
+
+input[type=text]:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+input[type=email]:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+input[type=password]:focus {
+  border: 1px solid hsl(249, 10%, 26%);
 }
 
 input[type=button] {
