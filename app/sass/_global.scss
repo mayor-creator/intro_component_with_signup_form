@@ -24,6 +24,7 @@ main {
 
 	@include v.desktop {
 		flex-direction: row;
+		padding-right: 30px;
 	}
 }
 
@@ -67,6 +68,7 @@ h1 {
 	}
 }
 
+/* right side of the content styling */
 .right_container {
 	padding-bottom: 50px;
 	overflow: hidden;
@@ -100,7 +102,6 @@ span {
 	font-weight: v.$font_weight-seven;
 }
 
-
 .form_container {
 	border-radius: 10px;
 	background-color: whitesmoke;
@@ -109,11 +110,17 @@ span {
 
 	@include v.desktop {
 		width: 544px;
+		padding-bottom: 30px;
+		box-shadow: none;
 	}
 }
 
 .contact_info {
 	padding: 30px 0px 0px 0px;
+
+	@include v.desktop {
+		padding: 30px;
+	}
 }
 
 input {

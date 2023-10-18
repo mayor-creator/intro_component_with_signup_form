@@ -29,6 +29,7 @@ main {
 @media (min-width: 64.0625em) and (max-width: 80em) {
   main {
     flex-direction: row;
+    padding-right: 30px;
   }
 }
 
@@ -76,6 +77,7 @@ h1 {
   }
 }
 
+/* right side of the content styling */
 .right_container {
   padding-bottom: 50px;
   overflow: hidden;
@@ -120,11 +122,18 @@ span {
 @media (min-width: 64.0625em) and (max-width: 80em) {
   .form_container {
     width: 544px;
+    padding-bottom: 30px;
+    box-shadow: none;
   }
 }
 
 .contact_info {
   padding: 30px 0px 0px 0px;
+}
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  .contact_info {
+    padding: 30px;
+  }
 }
 
 input {
