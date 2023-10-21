@@ -192,4 +192,18 @@ input[type=button] {
 
 .terms {
   color: hsl(0, 100%, 74%);
+}
+
+.error_message {
+  color: hsl(0, 100%, 74%);
+  display: none;
+  font-size: 12px;
+  font-weight: normal;
+  padding-right: 23px;
+  text-align: right;
+}
+@media (min-width: 64.0625em) and (max-width: 80em) {
+  .error_message {
+    padding-right: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
