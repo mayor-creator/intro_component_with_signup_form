@@ -60,6 +60,7 @@
 							name="first_name"
 							id="first_name"
 							placeholder="First Name"
+							autocomplete="given-name"
 							required />
 						<span class="error_message">First Name cannot be empty</span>
 						<br />
@@ -75,6 +76,7 @@
 							name="last_name"
 							id="last_name"
 							placeholder="Last Name"
+							autocomplete="family-name"
 							required />
 						<span class="error_message">Last Name cannot be empty</span>
 						<br />
@@ -90,6 +92,7 @@
 							name="email_address"
 							id="email_address"
 							placeholder="Email Address"
+							autocomplete="email"
 							required />
 						<span class="error_message">Looks like this is not an email</span>
 						<br />
@@ -105,18 +108,17 @@
 							name="password"
 							id="password"
 							placeholder="Password"
+							autocomplete="current-password"
 							required />
 						<span class="error_message">Password cannot be empty</span>
 						<br />
 						<!--Password input end-->
 					</form>
-					<div class="button">
-						<input
-							type="button"
-							id="button"
-							name="button"
-							value="CLAIM YOUR FREE TRAIL" />
-					</div>
+					<input
+						type="button"
+						id="button"
+						name="button"
+						value="CLAIM YOUR FREE TRAIL" />
 					<p class="terms_of_services">
 						By clicking the button, you are agreeing to our<span class="terms">
 							Terms and Services
